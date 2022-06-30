@@ -1,7 +1,6 @@
 "use strict";
 
 const express = require("express");
-const { items } = require('./fakeDb');
 const router = require('./shoppingListRouter')
 const app = express();
 
