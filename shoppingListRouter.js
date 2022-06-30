@@ -17,7 +17,7 @@ router.get('/', function (req, res) {
 router.post('/', function (req, res) {
     const newItem = items.push(req.body)
 
-    return res.json({ added: req.body });
+    return res.status(201).json({ added: req.body });
 });
 
 /** Returns json of the item listed in the url */
